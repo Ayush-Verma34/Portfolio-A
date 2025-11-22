@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
                     <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
                 </motion.div>
 
-                <div className="lg:flex grid grid-cols-2 justify-center items-center gap-10 mx-auto">
+                <div className="lg:flex grid grid-cols-2 md:grid-cols-3 gap-8 space-y-4 place-items-center">
                     {skills.map((skill) => (
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
