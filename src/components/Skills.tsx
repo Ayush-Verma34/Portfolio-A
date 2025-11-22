@@ -4,17 +4,17 @@ import { motion } from 'framer-motion';
 
 const Skills: React.FC = () => {
     const skills = [
-        { name: 'HTML5', icon: '/src/assets/icons/html.svg' },
-        { name: 'CSS3', icon: '/src/assets/icons/css-3.svg' },
-        { name: 'JavaScript', icon: '/src/assets/icons/js.svg' },
-        { name: 'TypeScript', icon: '/src/assets/icons/typescript.svg' },
-        { name: 'Tailwind CSS', icon: '/src/assets/icons/tailwindcss.svg' },
-        { name: 'Bootstrap', icon: '/src/assets/icons/bootstrap.svg' },
-        { name: 'React', icon: '/src/assets/icons/react.svg' },
-        { name: 'Node.js', icon: '/src/assets/icons/nodejs.svg' },
-        { name: 'MongoDB', icon: '/src/assets/icons/mongodb.svg' },
-        { name: 'Express', icon: '/src/assets/icons/express.svg' },
-        { name: 'Git', icon: '/src/assets/icons/git.svg' },
+        { name: 'HTML5', icon: '/icons/html.svg' },
+        { name: 'CSS3', icon: '/icons/css-3.svg' },
+        { name: 'JavaScript', icon: '/icons/js.svg' },
+        { name: 'TypeScript', icon: '/icons/typescript.svg' },
+        { name: 'Tailwind CSS', icon: '/icons/tailwindcss.svg' },
+        { name: 'Bootstrap', icon: '/icons/bootstrap.svg' },
+        { name: 'React', icon: '/icons/react.svg' },
+        { name: 'Node.js', icon: '/icons/nodejs.svg' },
+        { name: 'MongoDB', icon: '/icons/mongodb.svg' },
+        { name: 'Express', icon: '/icons/express.svg' },
+        { name: 'Git', icon: '/icons/git.svg' },
     ];
 
     return (
