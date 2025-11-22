@@ -24,8 +24,8 @@ const Projects: React.FC = () => {
             title: 'Portfolio Website',
             description: 'A modern, responsive portfolio website featuring interactive animations and a premium design system.',
             tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-            github: '#',
-            demo: '#',
+            github: 'https://github.com/Ayush-Verma34/Portfolio-A',
+            demo: 'https://ayush-2003.netlify.app/',
             image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
         },
         {
