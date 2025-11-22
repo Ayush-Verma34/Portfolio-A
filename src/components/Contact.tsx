@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
                                 </div>
                                 <div>
                                     <p className="text-sm text-secondary">Email</p>
-                                    <p className="font-medium">contact@example.com</p>
+                                    <p className="font-medium">ayush2003sitapur@gmail.com</p>
                                 </div>
                             </div>
 
@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
                                 </div>
                                 <div>
                                     <p className="text-sm text-secondary">Phone</p>
-                                    <p className="font-medium">+1 (555) 123-4567</p>
+                                    <p className="font-medium">+91 7607914166</p>
                                 </div>
                             </div>
 
@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
                                 </div>
                                 <div>
                                     <p className="text-sm text-secondary">Location</p>
-                                    <p className="font-medium">San Francisco, CA</p>
+                                    <p className="font-medium">Sitapur, UP, India</p>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
                                         type="text"
                                         id="name"
                                         className="w-full bg-black/20 border border-foreground/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
-                                        placeholder="John Doe"
+                                        placeholder="Peter Parker"
                                     />
                                 </div>
                                 <div>
@@ -91,7 +91,7 @@ const Contact: React.FC = () => {
                                         type="email"
                                         id="email"
                                         className="w-full bg-black/20 border border-foreground/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
-                                        placeholder="john@example.com"
+                                        placeholder="name@example.com"
                                     />
                                 </div>
                             </div>
