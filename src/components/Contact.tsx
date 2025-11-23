@@ -1,8 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 const Contact: React.FC = () => {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({ ...formData, [e.target.id]: e.target.value });
+    };
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        emailjs.send(
+            'service_vnhrtsm',
+            'template_7rsvstc',
+            formData,
+            'UvZRg2HDqGULktsK_'
+        )
+            .then(() => {
+                alert("Message sent successfully!");
+                setFormData({ name: '', email: '', subject: '', message: '' });
+            })
+            .catch((error) => {
+                console.log(error);
+                alert("Failed to send message. Please try again.");
+            });
+    };
+
     return (
         <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
             <div className="max-w-7xl mx-auto">
@@ -74,7 +106,9 @@ const Contact: React.FC = () => {
                         transition={{ duration: 0.5 }}
                         className="bg-card/50 backdrop-blur-sm border border-foreground/50 p-8 rounded-2xl"
                     >
-                        <form className="space-y-6">
+                        <form
+                            onSubmit={handleSubmit}
+                            className="space-y-6">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">Name</label>
@@ -83,6 +117,8 @@ const Contact: React.FC = () => {
                                         id="name"
                                         className="w-full bg-black/20 border border-foreground/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
                                         placeholder="Peter Parker"
+                                        value={formData.name}
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <div>
@@ -92,6 +128,8 @@ const Contact: React.FC = () => {
                                         id="email"
                                         className="w-full bg-black/20 border border-foreground/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
                                         placeholder="name@example.com"
+                                        value={formData.email}
+                                        onChange={handleChange}
                                     />
                                 </div>
                             </div>
@@ -103,6 +141,8 @@ const Contact: React.FC = () => {
                                     id="subject"
                                     className="w-full bg-black/20 border border-foreground/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
                                     placeholder="Project Inquiry"
+                                    value={formData.subject}
+                                    onChange={handleChange}
                                 />
                             </div>
 
@@ -113,6 +153,8 @@ const Contact: React.FC = () => {
                                     rows={4}
                                     className="w-full bg-black/20 border border-foreground/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors resize-none"
                                     placeholder="Your message here..."
+                                    value={formData.message}
+                                    onChange={handleChange}
                                 />
                             </div>
 
