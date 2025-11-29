@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X, Mail, } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FiGithub } from 'react-icons/fi';
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,10 +22,12 @@ const Navbar: React.FC = () => {
         { name: 'Projects', href: '#projects' },
         { name: 'Contact', href: '#contact' },
     ];
+
     const contactLinks = [
-        { icon: Github, href: 'https://github.com/Ayush-Verma34' },
-        { icon: Linkedin, href: 'https://www.linkedin.com/in/ayush-verma-b64a05339' },
+        { icon: FiGithub, href: 'https://github.com/Ayush-Verma34' },
+        { icon: FaLinkedinIn, href: 'https://www.linkedin.com/in/ayush-verma-b64a05339' },
         { icon: Mail, href: 'mailto:ayush2003sitapur@gmail.com' },
+        { icon: FaWhatsapp, href: 'https://wa.me/7607914166?text=Hi%20Ayush,%20I%20want%20to%20connect%20with%20you!' },
     ];
 
     return (
