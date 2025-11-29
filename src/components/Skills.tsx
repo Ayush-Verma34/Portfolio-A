@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -42,7 +41,7 @@ const Skills: React.FC = () => {
                             transition={{ duration: 0.3, delay: skills.indexOf(skill) * 0.1 }}
                             whileHover={{ scale: 1.2, transition: { duration: 0.1, delay: 0 } }}
                             className='w-28 h-28' key={skill.name}>
-                            <img src={skill.icon} alt={skill.name} />
+                            <img src={skill.icon} alt={skill.name} loading="lazy" />
                             <p className="text-center text-foreground mt-2 text-sm font-medium">{skill.name}</p>
                         </motion.div>
                     ))}

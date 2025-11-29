@@ -65,13 +65,13 @@ const About: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     className="mt-16 bg-card/30 backdrop-blur-sm border border-foreground/50 hover:border-primary/50 transition-colors p-8 rounded-2xl max-w-4xl mx-auto"
                 >
-                    <p className="text-muted-foreground text-lg leading-relaxed text-center">
+                    <div className="text-muted-foreground text-lg leading-relaxed text-center">
                         <p className='text-foreground font-bold text-2xl mb-6' >I'm Ayush Verma</p>
-                        I'm a passionate developer with a keen eye for detail. I specialize in building modern web applications
+                        <p>I'm a passionate developer with a keen eye for detail. I specialize in building modern web applications
                         using the latest technologies. My goal is to create software that not only works perfectly but also
                         delivers an exceptional user experience. When I'm not coding, you can find me exploring new technologies
-                        or contributing to open-source projects.
-                    </p>
+                        or contributing to open-source projects.</p>
+                    </div>
                 </motion.div>
             </div>
         </section>
