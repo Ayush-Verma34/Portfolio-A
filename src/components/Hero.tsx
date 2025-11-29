@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-accent font-medium tracking-wide uppercase mb-4">
+                    <h2 className="text-accent text-xl tracking-wide uppercase mb-4">
                         Full Stack Developer
                     </h2>
                 </motion.div>

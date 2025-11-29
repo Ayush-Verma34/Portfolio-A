@@ -141,7 +141,7 @@ const Background: React.FC = () => {
                 className="fixed top-0 left-0 w-full h-full -z-10 bg-background"
             />
             <svg
-                className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 w-full h-full opacity-10 select-none pointer-events-none"
+                className="fixed hidden md:flex top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 w-full h-full opacity-15 select-none pointer-events-none"
             >
                 {/* Define the gradient */}
                 <defs>
