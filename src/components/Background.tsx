@@ -135,10 +135,54 @@ const Background: React.FC = () => {
     }, []);
 
     return (
-        <canvas
-            ref={canvasRef}
-            className="fixed top-0 left-0 w-full h-full -z-10 bg-background"
-        />
+        <>
+            <canvas
+                ref={canvasRef}
+                className="fixed top-0 left-0 w-full h-full -z-10 bg-background"
+            />
+            <svg
+                className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 w-full h-full opacity-10 select-none pointer-events-none"
+            >
+                {/* Define the gradient */}
+                <defs>
+                    <linearGradient id="stroke-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#3b82f6" />
+                        <stop offset="50%" stopColor="#8b5cf6" />
+                        <stop offset="100%" stopColor="#22d3ee" />
+                    </linearGradient>
+                </defs>
+
+                <text
+                    x="50%"
+                    y="30%"
+                    textAnchor="middle"
+                    dominantBaseline="middle"
+                    stroke="url(#stroke-gradient)"
+                    strokeWidth="5"
+                    fill="transparent"
+                    fontSize="300"
+                    fontWeight="900"
+                    letterSpacing="25"
+                >
+                    AYUSH
+                </text>
+
+                <text
+                    x="50%"
+                    y="70%"
+                    textAnchor="middle"
+                    dominantBaseline="middle"
+                    stroke="url(#stroke-gradient)"
+                    strokeWidth="5"
+                    fill="transparent"
+                    fontSize="300"
+                    fontWeight="900"
+                    letterSpacing="25"
+                >
+                    VERMA
+                </text>
+            </svg>
+        </>
     );
 };
 
