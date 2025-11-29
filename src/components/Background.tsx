@@ -141,7 +141,7 @@ const Background: React.FC = () => {
                 className="fixed top-0 left-0 w-full h-full -z-10 bg-background"
             />
             <svg
-                className="fixed hidden md:flex top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 w-full h-full opacity-15 select-none pointer-events-none"
+                className="w-full h-full fixed hidden sm:flex top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10  opacity-10 select-none pointer-events-none"
             >
                 {/* Define the gradient */}
                 <defs>
@@ -154,30 +154,29 @@ const Background: React.FC = () => {
 
                 <text
                     x="50%"
-                    y="30%"
+                    y="35%"
                     textAnchor="middle"
                     dominantBaseline="middle"
                     stroke="url(#stroke-gradient)"
                     strokeWidth="5"
                     fill="transparent"
-                    fontSize="300"
+                    fontSize="20vw"
                     fontWeight="900"
-                    letterSpacing="25"
+                    letterSpacing="1.5vw"
                 >
                     AYUSH
                 </text>
 
                 <text
                     x="50%"
-                    y="70%"
+                    y="80%"
                     textAnchor="middle"
                     dominantBaseline="middle"
                     stroke="url(#stroke-gradient)"
                     strokeWidth="5"
-                    fill="transparent"
-                    fontSize="300"
+                    fontSize="20vw"
                     fontWeight="900"
-                    letterSpacing="25"
+                    letterSpacing="1vw"
                 >
                     VERMA
                 </text>
