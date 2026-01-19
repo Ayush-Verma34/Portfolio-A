@@ -152,7 +152,7 @@ const Background: React.FC = () => {
                     </linearGradient>
                 </defs>
 
-                <text
+                {/* <text
                     x="50%"
                     y="35%"
                     textAnchor="middle"
@@ -179,7 +179,7 @@ const Background: React.FC = () => {
                     letterSpacing="1vw"
                 >
                     VERMA
-                </text>
+                </text> */}
             </svg>
         </>
     );
