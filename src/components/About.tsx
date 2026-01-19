@@ -37,6 +37,22 @@ const About: React.FC = () => {
                     <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
                 </motion.div>
 
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    className="mb-16 bg-card/30 backdrop-blur-sm border border-foreground/50 hover:border-primary/50 transition-colors p-8 rounded-2xl max-w-4xl mx-auto"
+                >
+                    <div className="text-muted-foreground text-lg leading-relaxed text-center">
+                        <p className='text-foreground font-bold text-2xl mb-6' >I'm Ayush Verma</p>
+                        <p>I'm a passionate developer with a keen eye for detail. I specialize in building modern web applications
+                            using the latest technologies. My goal is to create software that not only works perfectly but also
+                            delivers an exceptional user experience. When I'm not coding, you can find me exploring new technologies
+                            or contributing to open-source projects.</p>
+                    </div>
+                </motion.div>
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {cards.map((card, index) => (
                         <motion.div
@@ -57,22 +73,6 @@ const About: React.FC = () => {
                         </motion.div>
                     ))}
                 </div>
-
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 20 }}
-                    transition={{ duration: 0.5, delay: 0.6 }}
-                    className="mt-16 bg-card/30 backdrop-blur-sm border border-foreground/50 hover:border-primary/50 transition-colors p-8 rounded-2xl max-w-4xl mx-auto"
-                >
-                    <div className="text-muted-foreground text-lg leading-relaxed text-center">
-                        <p className='text-foreground font-bold text-2xl mb-6' >I'm Ayush Verma</p>
-                        <p>I'm a passionate developer with a keen eye for detail. I specialize in building modern web applications
-                        using the latest technologies. My goal is to create software that not only works perfectly but also
-                        delivers an exceptional user experience. When I'm not coding, you can find me exploring new technologies
-                        or contributing to open-source projects.</p>
-                    </div>
-                </motion.div>
             </div>
         </section>
     );
