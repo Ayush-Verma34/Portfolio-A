@@ -5,6 +5,30 @@ import { Github, ExternalLink } from 'lucide-react';
 const Projects: React.FC = () => {
     const projects = [
         {
+            title: 'Ai Blogging Platform',
+            description: 'A cutting-edge blogging platform powered by artificial intelligence, designed to streamline content creation and enhance user engagement.',
+            tags: ['React', 'Node.js', 'MongoDB', 'Next.js'],
+            github: 'https://github.com/Ayush-Verma34/AI-Blog-Bogosphere',
+            demo: 'https://ai-blog-blogosphere.vercel.app/',
+            image: '../src/assets/Images/Blog.png'
+        },
+        {
+            title: 'Agri Sangam',
+            description: 'Engineered a centralized platform for agricultural dataset discovery and sharing, integrated with community forum featuring threaded discussions, and dynamic dataset ratings to drive researcher collaboration.',
+            tags: ['React', 'Node.js', 'MongoDB', 'TailwindCSS'],
+            github: '#',
+            demo: 'https://agri-sangam.vercel.app/',
+            image: '../src/assets/Images/AgriSangam.png'
+        },
+        {
+            title: 'TaskFlow',
+            description: 'A sleek task management application designed to boost productivity and organization. Built with React, Node.js, and MongoDB, TaskFlow offers a seamless user experience for managing tasks, setting deadlines, and tracking progress.',
+            tags: ['React', 'Node.js', 'MongoDB', 'TailwindCSS'],
+            github: 'https://github.com/Ayush-Verma34/TaskFLow-Frontend',
+            demo: 'https://task-flow-taskmanagement.vercel.app/',
+            image: '../src/assets/Images/TaskFlow.png'
+        },
+        {
             title: 'E-Commerce Platform',
             description: 'A full-featured online store built with React, Node.js, and MongoDB. Features include user authentication, cart management, and payment integration.',
             tags: ['React', 'Node.js', 'MongoDB', 'Next.js'],
@@ -69,7 +93,7 @@ const Projects: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 20 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
-                            className="bg-card/50 backdrop-blur-sm border border-foreground/5 rounded-2xl overflow-hidden hover:border-primary/50 transition-all group"
+                            className="bg-card/50 backdrop-blur-sm border border-foreground/5 rounded-2xl overflow-hidden hover:border-primary/50 transition-all group h-full flex flex-col"
                         >
                             <div className="relative h-48 overflow-hidden">
                                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors z-10" />
@@ -81,7 +105,7 @@ const Projects: React.FC = () => {
                                 />
                             </div>
 
-                            <div className="p-6">
+                            <div className="p-6 flex flex-1 flex-col">
                                 <div className="flex justify-between items-start mb-4">
                                     <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                                         {project.title}
@@ -100,7 +124,7 @@ const Projects: React.FC = () => {
                                     {project.description}
                                 </p>
 
-                                <div className="flex flex-wrap gap-2">
+                                <div className="flex flex-wrap gap-2 mt-auto">
                                     {project.tags.map((tag, tagIndex) => (
                                         <span
                                             key={tagIndex}
