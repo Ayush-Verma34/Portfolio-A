@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
             tags: ['React', 'Node.js', 'MongoDB', 'Next.js'],
             github: 'https://github.com/Ayush-Verma34/AI-Blog-Bogosphere',
             demo: 'https://ai-blog-blogosphere.vercel.app/',
-            image: '../src/assets/Images/Blog.png'
+            image: '.././public/Images/Blog.png'
         },
         {
             title: 'Agri Sangam',
@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
             tags: ['React', 'Node.js', 'MongoDB', 'TailwindCSS'],
             github: '#',
             demo: 'https://agri-sangam.vercel.app/',
-            image: '../src/assets/Images/AgriSangam.png'
+            image: '.././public/Images/AgriSangam.png'
         },
         {
             title: 'TaskFlow',
@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
             tags: ['React', 'Node.js', 'MongoDB', 'TailwindCSS'],
             github: 'https://github.com/Ayush-Verma34/TaskFLow-Frontend',
             demo: 'https://task-flow-taskmanagement.vercel.app/',
-            image: '../src/assets/Images/TaskFlow.png'
+            image: '.././public/Images/TaskFlow.png'
         },
         {
             title: 'E-Commerce Platform',
